@@ -1,0 +1,241 @@
+/* PlaceOrder component specific styles */
+.place-order-page {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #333
+  ); /* Darker gradient for sleekness */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  color: #e0e0e0;
+}
+
+.place-order-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #4169e1; /* Royal Blue */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.place-order-page h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+.place-order-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.place-order-page form div {
+  background-color: #2a2a2a; /* Dark background with slight contrast */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.place-order-page form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  color: #4169e1; /* Royal Blue text */
+}
+
+.place-order-page form input,
+.place-order-page form textarea,
+.place-order-page form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #444; /* Dark borders */
+  background-color: #222; /* Dark input background */
+  color: #fff;
+  font-size: 16px;
+}
+
+.place-order-page form input:focus,
+.place-order-page form textarea:focus,
+.place-order-page form select:focus {
+  border: 1px solid #4169e1; /* Royal Blue on focus */
+  outline: none;
+  background-color: #333; /* Lighter dark background for focused elements */
+}
+
+.place-order-page .order-summary {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.place-order-page .order-summary ul {
+  list-style-type: none;
+  padding: 0;
+  color: #e0e0e0;
+}
+
+.place-order-page .order-summary li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.place-order-page .order-summary li p {
+  margin: 0;
+}
+
+.place-order-page .order-summary li p:last-child {
+  color: #4169e1; /* Royal Blue for prices */
+}
+
+.place-order-page button {
+  background-color: #4169e1; /* Royal Blue */
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.place-order-page button:hover {
+  background-color: #365ca8; /* Slightly darker royal blue on hover */
+}
+
+.place-order-page .customer-support {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.place-order-page .customer-support a {
+  color: #4169e1; /* Royal Blue */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.place-order-page .customer-support a:hover {
+  text-decoration: underline;
+  color: #e0e0e0;
+}
+
+.waybill {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.waybill h2 {
+  font-size: 28px;
+  color: #4169e1; /* Royal Blue */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.waybill p {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.waybill strong {
+  color: #4169e1; /* Royal Blue */
+}
+
+.place-order-page .customer-support a {
+  color: #4169e1; /* Royal Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.place-order-page .customer-support a:hover {
+  text-decoration: underline;
+}
+
+.receipt-modal {
+  background-color: #f1f1f1;
+  padding: 20px;
+  color: black;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-modal h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4169e1; /* Royal Blue */
+}
+
+.receipt-modal button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.receipt-modal button:hover {
+  background-color: #555;
+}
+
+.waybill-actions {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 15px; /* Adds space between buttons */
+}
+
+.waybill-actions button {
+  background-color: #4169e1; /* Royal Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.waybill-actions button:hover {
+  background-color: #365ca8; /* Slightly darker royal blue on hover */
+}
+
+/* Specific styles for "Show Receipt" button */
+.show-receipt-button {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  border: 1px solid black; /* Black border */
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.show-receipt-button:hover {
+  background-color: #f0f0f0; /* Slight gray background on hover */
+  border: 1px solid #888; /* Lighter border on hover */
+}

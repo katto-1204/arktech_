@@ -1,0 +1,66 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.h2 {
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.navbar {
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.home,
+.products-page,
+.product-details,
+.cart-page,
+.place-order-page,
+.our-team-page,
+.login-page,
+.register-page,
+.profile-page {
+  padding: 20px;
+}

@@ -1,0 +1,193 @@
+/* General Styles */
+.profile {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile.dark {
+  background-color: #010011;
+  color: #eaeaea;
+}
+
+.profile-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333; /* Sophisticated divider */
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e0e0e0; /* Light text */
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0e0e0;
+  font-size: 1.5rem;
+}
+
+.theme-toggle-btn:hover {
+  color: #0058d3;
+  transform: rotate(20deg);
+}
+
+/* Profile Picture */
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.profile-pic-container {
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #444;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+}
+
+.upload-pic {
+  margin-top: 10px;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.upload-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Cards */
+.personal-info,
+.order-history,
+.wishlist,
+.profile-completion,
+.profile-stats {
+  background: #1e1e1e; /* Dark card background */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personal-info:hover,
+.order-history:hover,
+.wishlist:hover,
+.profile-completion:hover,
+.profile-stats:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.3);
+}
+
+.personal-info h2,
+.order-history h2,
+.wishlist h2,
+.profile-completion h3,
+.profile-stats h3 {
+  font-size: 1.8rem;
+  color: #e0e0e0;
+}
+
+/* Buttons */
+button {
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #333;
+  border-radius: 10px;
+  width: 100%;
+  height: 8px;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+
+/* Order and Wishlist Items */
+.order-item,
+.wishlist-item {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  color: #e0e0e0;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: #3b82f6;
+  transform: scale(1.1);
+}
+
+/* Logout Button */
+.logout-btn {
+  background: linear-gradient(135deg, #ff4747, #e12d39);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #e12d39, #9f1c23);
+  transform: scale(1.05);
+}

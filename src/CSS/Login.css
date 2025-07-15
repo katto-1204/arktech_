@@ -1,0 +1,172 @@
+/* Centering the login container in the viewport */
+.login-page {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  flex-direction: column; /* Ensures the container stays in column layout */
+}
+
+/* Login container styling */
+.login-container {
+  background-color: #fff; /* White background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  max-width: 400px; /* Max width of the form */
+  width: 100%; /* Full width, but constrained by max-width */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Ensures content inside is in column layout */
+  justify-content: center; /* Centers content vertically within the container */
+  align-items: center; /* Centers content horizontally within the container */
+  margin: 0 auto; /* Ensures container is centered horizontally */
+}
+
+/* Logo style */
+.logo {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Sign up link */
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Input fields styling */
+.login-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+/* Password field styling */
+.password-field {
+  position: relative;
+}
+
+.password-field .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Password field styling */
+.password-field {
+  position: relative;
+}
+
+.password-field .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Login button styling */
+.login-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Alternative login buttons section */
+.alternative-login {
+  margin-top: 20px;
+}
+
+.alternative-login p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.alternative-login button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.alternative-login button:hover {
+  background-color: #666;
+}
+
+/* Forgot password link */
+.forgot-password {
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .login-btn {
+    padding: 10px;
+  }
+
+  .alternative-login button {
+    padding: 10px;
+  }
+}

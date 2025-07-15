@@ -1,0 +1,106 @@
+/* General Styling for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: TRANSPARENT;
+  font-family: Poppins, sans-serif;
+  margin-right: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1440px; /* Set a max width for the navbar */
+  margin: 0 auto; /* Center the navbar */
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    max-width: 90%; /* Limit width on smaller screens */
+  }
+}
+
+.navbar .logo img {
+  height: 80px; /* Adjust logo size */
+  margin-left: 100px;
+  margin-top: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin-right: 30px;
+}
+
+.nav-links li {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: -30px;
+}
+.nav-links a:hover {
+  text-decoration: none;
+  color: blue;
+}
+/* Active Link Styling */
+.nav-links .active-link {
+  font-weight: bold; /* Embolden the active link */
+  color: #0073b1; /* Highlight color for active link */
+}
+
+.cart-login-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Search Box */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 8px 12px;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+  transition: width 0.3s ease;
+  background: rgb(0, 0, 0);
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.514);
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #0073b1;
+  width: 250px; /* Expands when focused */
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    margin-top: 10px;
+  }
+  .search-box {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+/* EmptyCart component specific styles */
+.empty-cart-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.empty-cart-page p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.empty-cart-page button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.empty-cart-page button:hover {
+  background-color: #0056b3;
+}

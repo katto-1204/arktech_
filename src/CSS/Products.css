@@ -1,0 +1,425 @@
+/* ==================== Global Styles ==================== */
+h3 {
+  font-size: 36px; /* Reduced font size */
+  color: BLACK;
+  margin-bottom: 20px;
+  line-height: 1.2; /* Reduced line-height for closer text */
+}
+
+/* ==================== Filter Buttons ==================== */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0; /* Reduced margin */
+}
+
+.filter-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 25px; /* Reduced padding */
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  cursor: pointer;
+  font-size: 17px; /* Reduced font size */
+  margin: 0 15px; /* Reduced margin */
+  transition: background-color 0.3s;
+}
+
+.filter-btn.active {
+  background-color: #0521ef;
+  color: white;
+}
+
+/* ==================== Product Grid ==================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; /* Reduced gap */
+  padding: 0 20px; /* Reduced padding */
+  max-width: 1440px; /* Set a max width for the product grid */
+  margin: 0 auto; /* Center the product grid */
+}
+
+/* ==================== Responsive Design ==================== */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for smaller screens */
+    max-width: 90%; /* Limit width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+    max-width: 90%; /* Limit width on very small screens */
+  }
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between; /* Align price and rating next to each other */
+  align-items: center; /* Align them vertically in the center */
+  gap: 20px; /* Space between price and rating */
+}
+
+.product-price {
+  font-size: 24px; /* Reduced font size */
+  font-weight: bold;
+  color: rgb(28, 139, 0);
+  line-height: 1.2; /* Reduced line-height for closer text */
+}
+
+.product-rating {
+  font-size: 14px; /* Reduced font size */
+  line-height: 1.2; /* Reduced line-height for closer text */
+}
+
+/* ==================== Product Card ==================== */
+.product-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  padding: 10px; /* Reduced padding */
+  text-align: center;
+  margin-top: 60px; /* Reduced margin */
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: visible;
+}
+
+/* ==================== Product Image ==================== */
+.product-image {
+  width: 250px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio while filling the container */
+  border-radius: 8px; /* Keeps the border radius for rounded corners */
+  position: relative;
+  top: -60px; /* Adjust the positioning */
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.product-image:hover {
+  transform: scale(1.03); /* Reduced hover scale */
+}
+
+/* ==================== Rating ==================== */
+.rating {
+  color: #f39c12;
+  font-size: 16px; /* Reduced font size */
+  margin: 5px 0; /* Reduced margin */
+  line-height: 0.2; /* Reduced line-height for closer text */
+}
+
+/* ==================== Buttons ==================== */
+.buttons-container {
+  display: flex; /* Ensures buttons are on the same row */
+  justify-content: space-between; /* Adds space between the buttons */
+  margin-top: 10px; /* Reduced margin */
+}
+
+.add-to-cart-btn {
+  background-color: #0521ef;
+  color: white;
+  padding: 8px 12px; /* Reduced padding */
+  border: none;
+  font-size: 12px; /* Reduced font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1; /* Makes buttons take equal width */
+  margin-right: 8px; /* Reduced margin */
+}
+
+.buy-now-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 8px 12px; /* Reduced padding */
+  border: 1px solid black;
+  font-size: 12px; /* Reduced font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1; /* Makes buttons take equal width */
+}
+
+.buttons-container button {
+  width: 48%; /* Ensures the buttons are side by side without touching */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #011030;
+  color: rgb(255, 255, 255);
+}
+
+.buy-now-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/* ==================== Modal Styles ==================== */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; /* Reduced margin */
+}
+
+.modal-btn-wrapper {
+  width: 50%;
+}
+
+.add-to-cart-btn,
+.cancel-btn {
+  padding: 8px 12px; /* Reduced padding */
+  border: none;
+  font-size: 12px; /* Reduced font size */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn {
+  background-color: #0521ef; /* Blue background for Add to Cart */
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #f44336; /* Red background for Cancel */
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1100f8;
+}
+
+.cancel-btn:hover {
+  background-color: #c1351d;
+}
+
+/* ==================== Increment and Quantity Controls ==================== */
+.increment-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 12px; /* Reduced padding */
+  cursor: pointer;
+  font-size: 18px; /* Reduced font size */
+  border-radius: 5px;
+}
+
+.increment-btn:hover {
+  background-color: #333;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.quantity-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px; /* Reduced margin */
+}
+
+.quantity-btn {
+  font-size: 18px; /* Reduced font size */
+  padding: 5px 8px; /* Reduced padding */
+  cursor: pointer;
+}
+
+.quantity-display {
+  margin: 0 8px;
+  font-size: 18px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black; /* Set the text color to black */
+}
+
+.added-to-cart-message {
+  position: fixed; /* Position it at the top of the screen */
+  top: 0; /* Set it to the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  animation: fadeOut 3s ease-out forwards;
+}
+
+/* Keyframes for fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ==================== Responsive Design ==================== */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-btn {
+    margin: 5px 0;
+  }
+
+  .product-card {
+    padding: 8px; /* Reduced padding */
+  }
+
+  .modal-content-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 80px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-btn {
+    font-size: 12px; /* Reduced font size */
+    padding: 6px 12px; /* Reduced padding */
+  }
+}
+
+/* ==================== Product Modal ==================== */
+
+.product-modal {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+
+  padding: 20px; /* Reduced padding */
+
+  border: 16px solid white;
+
+  border-radius: 8px;
+
+  max-width: 400px; /* Reduced max-width */
+
+  text-align: center;
+
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+
+  top: 8px;
+
+  right: 8px;
+
+  background: none;
+
+  border: none;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.aadd-to-cart-btn {
+  margin-top: 30px;
+
+  border: 1px solid black;
+
+  padding: 20px;
+}
+
+.added-to-cart-message {
+  position: fixed;
+
+  top: 10px;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background-color: #4caf50;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  z-index: 1000;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  opacity: 1;
+
+  animation: fadeOut 3s ease-out forwards;
+}
+
+/* Keyframes for fade-out animation */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

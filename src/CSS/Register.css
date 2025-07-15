@@ -1,0 +1,145 @@
+/* Ensure the body takes full height and no margin */
+/* Container that centers the register form */
+.register-page {
+  display: flex;
+  justify-content: center; /* Aligns the container horizontally */
+  align-items: center; /* Aligns the container vertically */
+  flex-direction: column; /* Stacks content vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: black; /* Background color */
+}
+
+/* Register container styling */
+.register-container {
+  background-color: #fff; /* White background */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  max-width: 600px; /* Max width of the form */
+  width: 100%; /* Full width, but constrained by max-width */
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Ensures content inside is in column layout */
+  justify-content: center; /* Centers content vertically within the container */
+  align-items: center; /* Centers content horizontally within the container */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Title and instructions */
+h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Sign up link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form styles */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Input fields styling */
+.register-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+}
+
+/* Password field styling */
+.password-field {
+  position: relative;
+}
+
+.password-field .eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Register button styling */
+.register-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Image section */
+.image-section {
+  display: none; /* Hidden on smaller devices */
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 30px;
+    max-width: 350px;
+  }
+
+  .register-btn {
+    padding: 10px;
+  }
+
+  .register-form input {
+    padding: 12px;
+  }
+
+  .image-section {
+    display: none; /* Hide the image on smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .image-section {
+    display: block; /* Show image only on larger screens */
+    width: 50%;
+    padding-left: 20px;
+  }
+}
